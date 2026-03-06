@@ -1,0 +1,107 @@
+﻿/* ============================
+   LR Scheduler Visualizer
+   ============================ */
+.lr-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: var(--space-md);
+  align-items: start;
+}
+
+.lr-param-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+.lr-sched-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: var(--space-sm);
+}
+
+.lr-sched-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.15s var(--ease);
+  opacity: 0.5;
+}
+
+.lr-sched-item--on {
+  opacity: 1;
+  background: var(--bg-secondary);
+}
+
+.lr-sched-item:hover {
+  border-color: var(--accent);
+  opacity: 1;
+}
+
+.lr-swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.lr-sched-name {
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+
+.lr-sched-desc {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 2px;
+  line-height: 1.4;
+}
+
+.lr-chart-col {
+  min-width: 0;
+}
+
+.lr-chart-wrap {
+  height: 360px;
+  margin-top: var(--space-sm);
+}
+
+.lr-lookup {
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border);
+}
+
+.lr-lookup-results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: var(--space-sm);
+}
+
+.lr-lookup-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border: 1px solid;
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+}
+
+@media (max-width:860px) {
+  .lr-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .lr-chart-wrap {
+    height: 280px;
+  }
+}

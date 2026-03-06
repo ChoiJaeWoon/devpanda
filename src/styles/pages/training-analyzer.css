@@ -1,0 +1,108 @@
+﻿/* ============================
+   Training Analyzer
+   ============================ */
+.ta-file-badge {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: 10px 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  margin-top: var(--space-sm);
+}
+
+.ta-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+.ta-stat {
+  padding: 14px 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+
+.ta-stat__val {
+  font-size: var(--text-xl);
+  font-weight: 800;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.ta-stat__label {
+  font-size: var(--text-xs);
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.ta-chart-wrap {
+  height: 280px;
+  margin-top: var(--space-sm);
+}
+
+.ta-insights {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+.ta-insight {
+  padding: 14px 16px;
+  border-radius: var(--radius-md);
+  border-left: 4px solid;
+}
+
+.ta-insight--good {
+  background: #f0fdf4;
+  border-color: #16a34a;
+}
+
+.ta-insight--info {
+  background: #eff6ff;
+  border-color: #3b82f6;
+}
+
+.ta-insight--warn {
+  background: #fffbeb;
+  border-color: #d97706;
+}
+
+.ta-insight--danger {
+  background: #fef2f2;
+  border-color: #ef4444;
+}
+
+.ta-insight__header {
+  font-weight: 700;
+  font-size: var(--text-sm);
+  margin-bottom: 6px;
+}
+
+.ta-insight--good .ta-insight__header {
+  color: #15803d;
+}
+
+.ta-insight--info .ta-insight__header {
+  color: #1d4ed8;
+}
+
+.ta-insight--warn .ta-insight__header {
+  color: #b45309;
+}
+
+.ta-insight--danger .ta-insight__header {
+  color: #dc2626;
+}
+
+.ta-insight__msg {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  line-height: 1.6;
+}

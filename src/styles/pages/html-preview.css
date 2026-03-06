@@ -1,0 +1,127 @@
+/* ============================
+   HTML Live Preview
+   ============================ */
+
+.hp-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.hp-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding: var(--space-sm) var(--space-md);
+}
+
+.hp-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: var(--text-sm);
+    color: var(--text-secondary);
+    cursor: pointer;
+    user-select: none;
+}
+
+.hp-toggle input {
+    accent-color: var(--accent);
+    cursor: pointer;
+}
+
+/* Layout modes */
+.hp-layout {
+    display: grid;
+    gap: var(--space-md);
+    flex: 1;
+    min-height: 0;
+    align-items: start;
+}
+
+.hp-layout--split {
+    grid-template-columns: 1fr 1fr;
+}
+
+.hp-layout--editor {
+    grid-template-columns: 1fr;
+}
+
+.hp-layout--preview {
+    grid-template-columns: 1fr;
+}
+
+/* Editor column: stacks HTML + toggle + CSS/JS vertically */
+.hp-editor-col {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    min-height: 0;
+}
+
+.hp-hidden {
+    display: none !important;
+}
+
+/* Toggle button */
+.hp-extras-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+    padding: 8px;
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-md);
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: var(--text-sm);
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+
+.hp-extras-toggle:hover {
+    background: var(--bg-secondary);
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+/* Editor panel */
+.hp-editor-panel {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.hp-editor {
+    flex: 1;
+    font-family: 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.6;
+    resize: vertical;
+    min-height: 240px;
+    tab-size: 2;
+}
+
+/* Smaller editors for CSS/JS */
+.hp-editor--sm {
+    min-height: 140px;
+    resize: vertical;
+}
+
+/* Preview panel */
+.hp-preview-panel {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.hp-iframe {
+    flex: 1;
+    border: none;
+    border-radius: var(--radius-md);
+    background: #fff;
+    min-height: 500px;
+    width: 100%;
+}

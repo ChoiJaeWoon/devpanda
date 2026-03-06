@@ -1,0 +1,157 @@
+﻿/* ============================
+   Hash Generator
+   ============================ */
+.hg-layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: var(--space-md);
+  align-items: start;
+}
+
+.hg-result {
+  padding: var(--space-sm);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-sm);
+  transition: border-color 0.2s;
+}
+
+.hg-result--match {
+  border-color: #16a34a;
+  background: #f0fdf4;
+}
+
+.hg-result--mismatch {
+  border-color: #ef4444;
+  background: #fef2f2;
+}
+
+.hg-result__header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.hg-algo-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  background: var(--accent-light);
+  color: var(--accent);
+  border-radius: var(--radius-full);
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  flex-shrink: 0;
+}
+
+.hg-bits {
+  font-size: 10px;
+  color: var(--text-muted);
+}
+
+.hg-verify {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+
+.hg-verify--ok {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.hg-verify--fail {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+.hg-hash-val {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  word-break: break-all;
+  color: var(--text);
+  background: var(--bg-secondary);
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.03em;
+}
+
+.hg-about {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: var(--space-sm);
+}
+
+.hg-about-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.hg-status {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+}
+
+.hg-weak {
+  background: #fef9c3;
+  color: #92400e;
+}
+
+.hg-strong {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+@media(max-width:900px) {
+  .hg-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Notice banners (Hash Generator) */
+.hg-notice {
+  padding: 12px 14px;
+  border-radius: var(--radius-md);
+  border-left: 3px solid;
+}
+
+.hg-notice--info {
+  background: #eff6ff;
+  border-color: #3b82f6;
+}
+
+.hg-notice--warn {
+  background: #fffbeb;
+  border-color: #f59e0b;
+}
+
+.hg-notice__title {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.hg-notice__lib {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.hg-notice__lib--good {
+  background: #dcfce7;
+  color: #16a34a;
+}

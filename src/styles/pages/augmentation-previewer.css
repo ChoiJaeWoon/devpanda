@@ -1,0 +1,153 @@
+﻿/* ============================
+   Augmentation Previewer
+   ============================ */
+.aug-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: var(--space-md);
+  align-items: start;
+}
+
+.aug-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: var(--space-sm);
+}
+
+.aug-ctrl__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.aug-ctrl__label {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.aug-ctrl__val {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--accent);
+  min-width: 40px;
+  text-align: right;
+}
+
+.aug-slider {
+  width: 100%;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+/* Toggle switch */
+.aug-toggle {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.aug-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.aug-toggle__track {
+  position: absolute;
+  inset: 0;
+  background: var(--border);
+  border-radius: 10px;
+  transition: background 0.2s;
+}
+
+.aug-toggle__track::after {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.aug-toggle input:checked+.aug-toggle__track {
+  background: var(--accent);
+}
+
+.aug-toggle input:checked+.aug-toggle__track::after {
+  transform: translateX(16px);
+}
+
+/* Preview grid */
+.aug-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-sm);
+  margin-top: var(--space-sm);
+}
+
+.aug-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.aug-canvas {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  display: block;
+  object-fit: cover;
+  background: var(--bg-secondary);
+}
+
+.aug-canvas--lg {
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
+}
+
+.aug-card__label {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.aug-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  background: var(--accent-light);
+  color: var(--accent);
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  margin: 2px;
+}
+
+@media (max-width:960px) {
+  .aug-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .aug-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width:600px) {
+  .aug-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

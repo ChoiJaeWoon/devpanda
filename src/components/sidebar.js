@@ -107,6 +107,18 @@ export function renderSidebar() {
       tip.style.display = 'none';
     });
   });
+  // Auto-close sidebar on mobile when a nav item is clicked
+  aside.querySelectorAll('.sidebar__item').forEach(item => {
+    item.addEventListener('click', () => {
+      if (window.innerWidth <= 768) {
+        const sb = aside.querySelector('.sidebar');
+        if (sb) sb.classList.remove('sidebar--open');
+        const overlay = document.getElementById('sidebar-overlay');
+        if (overlay) overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  });
 }
 
 export { tools };

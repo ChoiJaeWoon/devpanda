@@ -13,6 +13,7 @@ const tools = [
       { icon: '🎨', name: 'Color Picker', path: '/color-picker', desc: 'Pick colors and convert between HEX, RGB, HSL, and HSV formats. Generate color palettes.' },
       { icon: '🖼️', name: 'Image Resizer', path: '/image-resizer', desc: 'Resize and compress images in-browser. Supports JPG, PNG, WebP output with quality control.' },
       { icon: '📦', name: 'Image Compressor', path: '/image-compressor', desc: 'Reduce image file size without changing resolution. Quality slider + WebP/JPEG/PNG output.' },
+      { icon: '✂️', name: 'BG Remover', path: '/bg-remover', desc: 'Remove image backgrounds instantly using AI — all in your browser, no upload to any server.' },
       { icon: '🔍', name: 'Regex Tester', path: '/regex-tester', desc: 'Test regular expressions with live match highlighting, group capture display, and flags support.' },
       { icon: '🔐', name: 'Hash Generator', path: '/hash-generator', desc: 'Generate MD5, SHA-1, SHA-256, SHA-512 hashes from text or files. All computed client-side.' },
       { icon: '📐', name: 'Unit Converter', path: '/unit-converter', desc: 'Convert CSS units (px, rem, em, vw), length, storage, temperature, time, angle, and more.' },

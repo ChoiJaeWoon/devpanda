@@ -25,6 +25,7 @@ import './styles/pages/ocr-extractor.css';
 import './styles/pages/hex-image.css';
 import './styles/pages/html-preview.css';
 import './styles/pages/image-compressor.css';
+import './styles/pages/bg-remover.css';
 import { registerRoute, initRouter } from './utils/router.js';
 import { renderNavbar } from './components/navbar.js';
 import { renderSidebar } from './components/sidebar.js';
@@ -53,6 +54,7 @@ import { renderOcrExtractor } from './pages/ocr-extractor.js';
 import { renderHexImage } from './pages/hex-image.js';
 import { renderHtmlPreview } from './pages/html-preview.js';
 import { renderImageCompressor } from './pages/image-compressor.js';
+import { renderBgRemover } from './pages/bg-remover.js';
 
 // Render shell
 renderNavbar();
@@ -84,6 +86,7 @@ registerRoute('/ocr-extractor', renderOcrExtractor);
 registerRoute('/hex-image', renderHexImage);
 registerRoute('/html-preview', renderHtmlPreview);
 registerRoute('/image-compressor', renderImageCompressor);
+registerRoute('/bg-remover', renderBgRemover);
 
 // Start router
 initRouter();

@@ -18,7 +18,7 @@ export function renderImageCompressor(container) {
 
     function savings(orig, compressed) {
         const pct = ((1 - compressed / orig) * 100).toFixed(1);
-        return pct > 0 ? `▼ ${pct}% 감소` : `▲ ${Math.abs(pct)}% 증가`;
+        return pct > 0 ? `▼ ${pct}% saved` : `▲ ${Math.abs(pct)}% larger`;
     }
 
     function savingsColor(orig, compressed) {
@@ -82,8 +82,8 @@ export function renderImageCompressor(container) {
           <div class="panel">
             <div class="drop-zone" id="drop-zone">
               <div class="drop-zone__icon">🖼️</div>
-              <div class="drop-zone__text">이미지를 드래그하거나 클릭해서 업로드</div>
-              <div class="drop-zone__hint">JPG, PNG, WebP, GIF 지원</div>
+              <div class="drop-zone__text">Drag & drop or click to upload an image</div>
+              <div class="drop-zone__hint">Supports JPG, PNG, WebP, GIF</div>
               <input type="file" id="file-input" accept="image/*" style="display:none;" />
             </div>
           </div>
@@ -92,9 +92,9 @@ export function renderImageCompressor(container) {
           <div class="panel" style="display:flex;flex-wrap:wrap;gap:var(--space-md);align-items:flex-end;">
             <!-- Format -->
             <div>
-              <div style="font-size:var(--text-sm);color:var(--text-muted);margin-bottom:6px;">출력 포맷</div>
+              <div style="font-size:var(--text-sm);color:var(--text-muted);margin-bottom:6px;">Output Format</div>
               <div class="jf-mode-tabs">
-                <button class="jf-mode-btn ${outputFormat === 'webp' ? 'active' : ''}" data-fmt="webp">WebP 추천</button>
+                <button class="jf-mode-btn ${outputFormat === 'webp' ? 'active' : ''}" data-fmt="webp">WebP (Recommended)</button>
                 <button class="jf-mode-btn ${outputFormat === 'jpeg' ? 'active' : ''}" data-fmt="jpeg">JPEG</button>
                 <button class="jf-mode-btn ${outputFormat === 'png' ? 'active' : ''}" data-fmt="png">PNG</button>
               </div>
@@ -104,26 +104,26 @@ export function renderImageCompressor(container) {
             ${outputFormat !== 'png' ? `
               <div style="flex:1;min-width:200px;">
                 <div style="font-size:var(--text-sm);color:var(--text-muted);margin-bottom:6px;">
-                  품질: <strong>${Math.round(quality * 100)}%</strong>
-                  <span style="color:var(--text-muted);font-size:11px;"> (높을수록 화질 좋고 용량 큼)</span>
+                  Quality: <strong>${Math.round(quality * 100)}%</strong>
+                  <span style="color:var(--text-muted);font-size:11px;"> (higher = better quality, larger file)</span>
                 </div>
                 <input type="range" id="quality-slider" min="1" max="100" value="${Math.round(quality * 100)}"
                   style="width:100%;accent-color:var(--accent);" />
               </div>
             ` : `
               <div style="font-size:var(--text-sm);color:var(--text-muted);padding:8px 12px;background:var(--bg-secondary);border-radius:var(--radius-md);">
-                💡 PNG는 무손실 포맷이라 품질 슬라이더가 없어요. WebP나 JPEG로 변환하면 용량을 크게 줄일 수 있어요.
+                💡 PNG is a lossless format, so the quality slider is not available. Converting to WebP or JPEG can significantly reduce file size.
               </div>
             `}
 
-            <button class="btn btn--secondary btn--sm" id="change-file-btn">📁 다른 이미지</button>
+            <button class="btn btn--secondary btn--sm" id="change-file-btn">📁 Change Image</button>
           </div>
 
           <!-- Before / After -->
           <div class="jf-layout">
             <!-- Original -->
             <div class="panel" style="display:flex;flex-direction:column;gap:8px;">
-              <div class="panel__title">📷 원본</div>
+              <div class="panel__title">📷 Original</div>
               <img src="${originalDataUrl}" class="ic-preview" alt="original" />
               <div class="ic-meta">
                 <span>📁 ${originalFile.name}</span>
@@ -135,8 +135,8 @@ export function renderImageCompressor(container) {
             <!-- Compressed -->
             <div class="panel" style="display:flex;flex-direction:column;gap:8px;">
               <div class="panel__title" style="display:flex;justify-content:space-between;align-items:center;">
-                <span>✨ 압축 결과</span>
-                ${compressedUrl ? `<button class="btn btn--primary btn--sm" id="download-btn">💾 다운로드</button>` : ''}
+                <span>✨ Compressed Result</span>
+                ${compressedUrl ? `<button class="btn btn--primary btn--sm" id="download-btn">💾 Download</button>` : ''}
               </div>
               ${compressedUrl ? `
                 <img src="${compressedUrl}" class="ic-preview" alt="compressed" />
@@ -149,19 +149,19 @@ export function renderImageCompressor(container) {
                 <div class="ic-savings-bar">
                   <div class="ic-savings-fill" style="width:${Math.min(100, (compSize / origSize) * 100).toFixed(1)}%;background:${savingsColor(origSize, compSize)};"></div>
                 </div>
-              ` : `<div class="jf-empty">압축 중...</div>`}
+              ` : `<div class="jf-empty">Compressing...</div>`}
             </div>
           </div>
         `}
 
         <!-- Info -->
         <div class="panel" style="background:var(--accent-light);border-color:var(--accent);">
-          <div class="panel__title">💡 압축 방식 안내</div>
+          <div class="panel__title">💡 Compression Guide</div>
           <ul style="font-size:var(--text-sm);color:var(--text-secondary);list-style:disc;padding-left:20px;line-height:2;">
-            <li><strong>WebP</strong>: 최신 포맷, 같은 화질에서 JPEG보다 25~35% 더 작게. 대부분 브라우저 지원.</li>
-            <li><strong>JPEG</strong>: 사진에 최적. 품질 70~85%면 육안으로 차이 거의 없음.</li>
-            <li><strong>PNG</strong>: 무손실이라 압축 효과 없음. WebP로 전환 권장.</li>
-            <li>해상도(픽셀 수)는 전혀 변경되지 않아요 — 오직 인코딩 방식만 바뀝니다.</li>
+            <li><strong>WebP</strong>: Modern format — 25–35% smaller than JPEG at the same quality. Supported by most browsers.</li>
+            <li><strong>JPEG</strong>: Best for photos. Quality 70–85% is visually indistinguishable from the original.</li>
+            <li><strong>PNG</strong>: Lossless format — no compression gain. Converting to WebP is recommended.</li>
+            <li>Resolution (pixel dimensions) is never changed — only the encoding method differs.</li>
           </ul>
         </div>
       </div>

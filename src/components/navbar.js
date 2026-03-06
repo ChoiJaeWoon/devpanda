@@ -14,7 +14,7 @@ export function renderNavbar() {
         <input type="text" id="tool-search" placeholder="Search tools..." autocomplete="off" />
       </div>
       <div class="navbar__actions">
-        <a class="navbar__link" href="https://github.com" target="_blank" rel="noopener">
+        <a class="navbar__link" href="https://github.com/ChoiJaeWoon/devpanda" target="_blank" rel="noopener">
           <span>GitHub</span> ↗
         </a>
       </div>

@@ -36,6 +36,9 @@ async function handleRoute() {
     }
   }
 
+  // Scroll to top on every navigation
+  window.scrollTo({ top: 0, behavior: 'instant' });
+
   // Update active sidebar item
   document.querySelectorAll('.sidebar__item').forEach(item => {
     const href = item.getAttribute('href');

@@ -70,7 +70,7 @@ export function renderFooter() {
           </span>
         </div>
         <span class="footer__bottom-right">
-          <a class="footer__bottom-link" href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+          <a class="footer__bottom-link" href="https://github.com/ChoiJaeWoon/devpanda" target="_blank" rel="noopener">GitHub</a>
           <span>·</span>
           <a class="footer__bottom-link" href="#/">Home</a>
         </span>

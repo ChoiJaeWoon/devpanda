@@ -5,7 +5,7 @@
 ### Browser-based utility toolkit for AI/ML and general developers
 
 [![Live Site](https://img.shields.io/badge/🌐_Live_Site-devpanda.nullpoint.cloud-6366f1?style=for-the-badge)](https://devpanda.nullpoint.cloud)<br>
-[![Firebase](https://img.shields.io/badge/Hosted_on-Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
+<br>[![Firebase](https://img.shields.io/badge/Hosted_on-Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
 [![Vite](https://img.shields.io/badge/Built_with-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
 

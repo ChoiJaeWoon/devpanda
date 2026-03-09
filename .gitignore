@@ -26,3 +26,6 @@ dist-ssr
 implementation_plan.md
 
 .firebase/
+
+# Firebase secrets
+src/utils/firebase.js

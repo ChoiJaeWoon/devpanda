@@ -51,7 +51,7 @@ export function renderFooter() {
         <!-- Contact col -->
         <div class="footer__col footer__col--no-multicol">
           <div class="footer__col-title">Contact</div>
-          <a class="footer__link" href="mailto:devpanda@nullpoint.cloud">📧 devpanda@nullpoint.cloud</a>
+          <a class="footer__link" href="mailto:devpanda@devpanda.cloud">📧 devpanda@devpanda.cloud</a>
           <span class="footer__link" style="cursor:default;opacity:0.6;">🐛 Bug reports welcome</span>
         </div>
 

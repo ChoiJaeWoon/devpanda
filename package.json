@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@imgly/background-removal": "^1.7.0",
-    "chart.js": "^4.5.1"
+    "chart.js": "^4.5.1",
+    "firebase": "^12.10.0"
   }
 }

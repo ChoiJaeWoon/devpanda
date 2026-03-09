@@ -2,6 +2,7 @@
  * DevPanda — Main Entry Point
  */
 import './style.css';
+import './utils/firebase.js';
 
 // Page-specific CSS (split from style.css)
 import './styles/pages/json-formatter.css';

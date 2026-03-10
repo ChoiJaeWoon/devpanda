@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://devpanda.nullpoint.cloud/sitemap.xml
+Sitemap: https://devpanda.cloud/sitemap.xml

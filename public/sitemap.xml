@@ -3,116 +3,116 @@
 
   <!-- Home -->
   <url>
-    <loc>https://devpanda.nullpoint.cloud/</loc>
+    <loc>https://devpanda.cloud/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <!-- General Dev Tools -->
   <url>
-    <loc>https://devpanda.nullpoint.cloud/#/csv-json</loc>
+    <loc>https://devpanda.cloud/#/csv-json</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devpanda.nullpoint.cloud/#/json-formatter</loc>
+    <loc>https://devpanda.cloud/#/json-formatter</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devpanda.nullpoint.cloud/#/base64-converter</loc>
+    <loc>https://devpanda.cloud/#/base64-converter</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devpanda.nullpoint.cloud/#/hex-image</loc>
+    <loc>https://devpanda.cloud/#/hex-image</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devpanda.nullpoint.cloud/#/html-preview</loc>
+    <loc>https://devpanda.cloud/#/html-preview</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devpanda.nullpoint.cloud/#/color-picker</loc>
+    <loc>https://devpanda.cloud/#/color-picker</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devpanda.nullpoint.cloud/#/image-resizer</loc>
+    <loc>https://devpanda.cloud/#/image-resizer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devpanda.nullpoint.cloud/#/regex-tester</loc>
+    <loc>https://devpanda.cloud/#/regex-tester</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devpanda.nullpoint.cloud/#/hash-generator</loc>
+    <loc>https://devpanda.cloud/#/hash-generator</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devpanda.nullpoint.cloud/#/unit-converter</loc>
+    <loc>https://devpanda.cloud/#/unit-converter</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devpanda.nullpoint.cloud/#/url-encoder</loc>
+    <loc>https://devpanda.cloud/#/url-encoder</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devpanda.nullpoint.cloud/#/cron-parser</loc>
+    <loc>https://devpanda.cloud/#/cron-parser</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devpanda.nullpoint.cloud/#/ocr-extractor</loc>
+    <loc>https://devpanda.cloud/#/ocr-extractor</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- AI / ML Tools -->
   <url>
-    <loc>https://devpanda.nullpoint.cloud/#/tensor-shape</loc>
+    <loc>https://devpanda.cloud/#/tensor-shape</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devpanda.nullpoint.cloud/#/label-converter</loc>
+    <loc>https://devpanda.cloud/#/label-converter</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devpanda.nullpoint.cloud/#/gpu-memory</loc>
+    <loc>https://devpanda.cloud/#/gpu-memory</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devpanda.nullpoint.cloud/#/training-analyzer</loc>
+    <loc>https://devpanda.cloud/#/training-analyzer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devpanda.nullpoint.cloud/#/lr-scheduler</loc>
+    <loc>https://devpanda.cloud/#/lr-scheduler</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devpanda.nullpoint.cloud/#/model-param-counter</loc>
+    <loc>https://devpanda.cloud/#/model-param-counter</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devpanda.nullpoint.cloud/#/augmentation-previewer</loc>
+    <loc>https://devpanda.cloud/#/augmentation-previewer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://devpanda.nullpoint.cloud/#/detection-metrics</loc>
+    <loc>https://devpanda.cloud/#/detection-metrics</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

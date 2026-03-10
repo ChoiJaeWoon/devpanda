@@ -1,10 +1,10 @@
 <div align="center">
 
-# ğŸ¼ DevPanda
+# ?¼ DevPanda
 
 ### Browser-based utility toolkit for AI/ML and general developers
 
-[![Live Site](https://img.shields.io/badge/ğŸŒ_Live_Site-devpanda.nullpoint.cloud-6366f1?style=for-the-badge)](https://devpanda.nullpoint.cloud)<br>
+[![Live Site](https://img.shields.io/badge/?Œ_Live_Site-devpanda.cloud-6366f1?style=for-the-badge)](https://devpanda.cloud)<br>
 <br>[![Firebase](https://img.shields.io/badge/Hosted_on-Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
 [![Vite](https://img.shields.io/badge/Built_with-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
@@ -15,50 +15,50 @@
 
 ---
 
-## âœ¨ Features
+## ??Features
 
-- âš¡ **100% in-browser** â€” all processing happens client-side
-- ğŸ”’ **Zero data storage** â€” nothing leaves your machine
-- ğŸ†“ **Free forever** â€” no paywalls, no accounts
-- ğŸ“± **Responsive** â€” works on desktop and mobile
-
----
-
-## ğŸ› ï¸ General Dev Tools
-
-| Tool | Description |
-|------|-------------|
-| ğŸ“‹ JSON Formatter | Format, validate & beautify JSON |
-| ğŸ”‘ Base64 Converter | Encode/decode Base64 strings |
-| ğŸ” Regex Tester | Test and debug regex patterns |
-| ğŸ” Hash Generator | MD5, SHA-1, SHA-256 hash generation |
-| ğŸŒ URL Encoder | Encode/decode URLs |
-| ğŸ“Š CSV â†” JSON | Convert between CSV and JSON formats |
-| ğŸ¨ Color Picker | HEX/RGB/HSL color converter |
-| ğŸ–¼ï¸ Image Resizer | Resize images in-browser |
-| ğŸ“¦ Image Compressor | Reduce image size without changing resolution |
-| ğŸ”· Image â†” HEX | Convert images to HEX values |
-| ğŸ–Šï¸ HTML Preview | Live HTML/CSS/JS editor with preview |
-| ğŸ“ Unit Converter | Length, weight, temperature, and more |
-| â±ï¸ Cron Parser | Parse and describe cron expressions |
-| ğŸ“„ PDF / OCR Extractor | Extract text from PDFs and images |
-
-## ğŸ¤– AI / ML Tools
-
-| Tool | Description |
-|------|-------------|
-| ğŸ§® Tensor Shape Calculator | Compute tensor shapes through NN layers |
-| ğŸ® GPU Memory Calculator | Estimate VRAM usage for model training |
-| ğŸ·ï¸ Label Converter | Convert YOLO â†” COCO â†” Pascal VOC |
-| ğŸ“ˆ Training Analyzer | Analyze training logs and detect issues |
-| ğŸ“‰ LR Scheduler Visualizer | Visualize learning rate schedules |
-| ğŸ”¢ Model Param Counter | Count model parameters by layer |
-| ğŸ–¼ï¸ Augmentation Previewer | Preview image augmentation effects |
-| ğŸ“ Detection Metrics | Calculate mAP, IoU, precision, recall |
+- ??**100% in-browser** ??all processing happens client-side
+- ?”’ **Zero data storage** ??nothing leaves your machine
+- ?†“ **Free forever** ??no paywalls, no accounts
+- ?“± **Responsive** ??works on desktop and mobile
 
 ---
 
-## ğŸš€ Getting Started
+## ?› ï¸?General Dev Tools
+
+| Tool | Description |
+|------|-------------|
+| ?“‹ JSON Formatter | Format, validate & beautify JSON |
+| ?”‘ Base64 Converter | Encode/decode Base64 strings |
+| ?” Regex Tester | Test and debug regex patterns |
+| ?” Hash Generator | MD5, SHA-1, SHA-256 hash generation |
+| ?Œ URL Encoder | Encode/decode URLs |
+| ?“Š CSV ??JSON | Convert between CSV and JSON formats |
+| ?¨ Color Picker | HEX/RGB/HSL color converter |
+| ?–¼ï¸?Image Resizer | Resize images in-browser |
+| ?“¦ Image Compressor | Reduce image size without changing resolution |
+| ?”· Image ??HEX | Convert images to HEX values |
+| ?–Šï¸?HTML Preview | Live HTML/CSS/JS editor with preview |
+| ?“ Unit Converter | Length, weight, temperature, and more |
+| ?±ï¸ Cron Parser | Parse and describe cron expressions |
+| ?“„ PDF / OCR Extractor | Extract text from PDFs and images |
+
+## ?¤– AI / ML Tools
+
+| Tool | Description |
+|------|-------------|
+| ?§® Tensor Shape Calculator | Compute tensor shapes through NN layers |
+| ?® GPU Memory Calculator | Estimate VRAM usage for model training |
+| ?·ï¸?Label Converter | Convert YOLO ??COCO ??Pascal VOC |
+| ?“ˆ Training Analyzer | Analyze training logs and detect issues |
+| ?“‰ LR Scheduler Visualizer | Visualize learning rate schedules |
+| ?”¢ Model Param Counter | Count model parameters by layer |
+| ?–¼ï¸?Augmentation Previewer | Preview image augmentation effects |
+| ?“ Detection Metrics | Calculate mAP, IoU, precision, recall |
+
+---
+
+## ?? Getting Started
 
 ```bash
 # Clone the repo
@@ -77,43 +77,43 @@ npm run build
 
 ---
 
-## ğŸ—ï¸ Tech Stack
+## ?—ï¸?Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
 | Build Tool | [Vite](https://vitejs.dev) |
 | Hosting | [Firebase Hosting](https://firebase.google.com) |
 | Styling | Vanilla CSS |
-| Fonts | [Google Fonts](https://fonts.google.com) â€” Inter |
+| Fonts | [Google Fonts](https://fonts.google.com) ??Inter |
 | News Feed | [Hacker News API](https://github.com/HackerNews/API), [Dev.to API](https://developers.forem.com/api) |
 | Link Preview | [Microlink API](https://microlink.io) (free tier) |
 | Image Processing | Browser Canvas API |
 
 ---
 
-## ğŸ“ Project Structure
+## ?“ Project Structure
 
 ```
 devpanda/
-â”œâ”€â”€ public/
-â”‚   â”œâ”€â”€ favicon.svg
-â”‚   â”œâ”€â”€ og-image.png
-â”‚   â”œâ”€â”€ robots.txt
-â”‚   â””â”€â”€ sitemap.xml
-â”œâ”€â”€ src/
-â”‚   â”œâ”€â”€ components/     # Shared UI components (navbar, sidebar, footer)
-â”‚   â”œâ”€â”€ pages/          # Individual tool pages
-â”‚   â”œâ”€â”€ styles/pages/   # Per-page CSS
-â”‚   â”œâ”€â”€ utils/          # Router, helpers
-â”‚   â”œâ”€â”€ main.js         # App entry & route registration
-â”‚   â””â”€â”€ style.css       # Global styles
-â”œâ”€â”€ index.html
-â””â”€â”€ vite.config.js
+?œâ??€ public/
+??  ?œâ??€ favicon.svg
+??  ?œâ??€ og-image.png
+??  ?œâ??€ robots.txt
+??  ?”â??€ sitemap.xml
+?œâ??€ src/
+??  ?œâ??€ components/     # Shared UI components (navbar, sidebar, footer)
+??  ?œâ??€ pages/          # Individual tool pages
+??  ?œâ??€ styles/pages/   # Per-page CSS
+??  ?œâ??€ utils/          # Router, helpers
+??  ?œâ??€ main.js         # App entry & route registration
+??  ?”â??€ style.css       # Global styles
+?œâ??€ index.html
+?”â??€ vite.config.js
 ```
 
 ---
 
-## ğŸ“¬ Contact
+## ?“¬ Contact
 
 Bug reports & feedback: [devpanda@devpanda.cloud](mailto:devpanda@nullpoint.cloud)
 
@@ -121,6 +121,6 @@ Bug reports & feedback: [devpanda@devpanda.cloud](mailto:devpanda@nullpoint.clou
 
 <div align="center">
 
-Made with â¤ï¸ for developers Â· [devpanda.cloud](https://devpanda.cloud)
+Made with ?¤ï¸ for developers Â· [devpanda.cloud](https://devpanda.cloud)
 
 </div>

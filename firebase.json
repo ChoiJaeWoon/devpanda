@@ -8,6 +8,10 @@
         ],
         "rewrites": [
             {
+                "source": "naver*.html",
+                "destination": "/naver*.html"
+            },
+            {
                 "source": "**",
                 "destination": "/index.html"
             }

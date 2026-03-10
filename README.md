@@ -115,12 +115,12 @@ devpanda/
 
 ## 📬 Contact
 
-Bug reports & feedback: [devpanda@nullpoint.cloud](mailto:devpanda@nullpoint.cloud)
+Bug reports & feedback: [devpanda@devpanda.cloud](mailto:devpanda@nullpoint.cloud)
 
 ---
 
 <div align="center">
 
-Made with ❤️ for developers · [devpanda.nullpoint.cloud](https://devpanda.nullpoint.cloud)
+Made with ❤️ for developers · [devpanda.cloud](https://devpanda.cloud)
 
 </div>

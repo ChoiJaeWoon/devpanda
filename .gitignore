@@ -29,3 +29,6 @@ implementation_plan.md
 
 # Firebase secrets
 src/utils/firebase.js
+
+# Naver Search Advisor verification
+naver*.html

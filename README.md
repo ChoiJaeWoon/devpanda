@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="public/logo.png" alt="DevPanda Logo" width="120" />
-</p>
-
 <h1 align="center">DevPanda</h1>
 
 <p align="center">

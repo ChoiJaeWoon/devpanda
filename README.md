@@ -1,70 +1,71 @@
-<div align="center">
+# DevPanda
 
-# ?êº DevPanda
+Browser-based utility toolkit for AI/ML and general developers.
 
-### Browser-based utility toolkit for AI/ML and general developers
-
-[![Live Site](https://img.shields.io/badge/?åê_Live_Site-devpanda.cloud-6366f1?style=for-the-badge)](https://devpanda.cloud)<br>
-<br>[![Firebase](https://img.shields.io/badge/Hosted_on-Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com)
-[![Vite](https://img.shields.io/badge/Built_with-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
-[![License: MIT](https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge)](LICENSE)
-
-> No install. No signup. No backend. Just open and use.
-
-</div>
+Live: https://devpanda.cloud | License: MIT
 
 ---
 
-## ??Features
+## About
 
-- ??**100% in-browser** ??all processing happens client-side
-- ?îí **Zero data storage** ??nothing leaves your machine
-- ?Üì **Free forever** ??no paywalls, no accounts
-- ?ì± **Responsive** ??works on desktop and mobile
+DevPanda is an open-source, browser-based toolkit with no installation required.
+All tools run 100%% client-side - your data never leaves your browser.
 
----
+## Tools
 
-## ?õ†Ô∏?General Dev Tools
+### AI / ML Tools
 
 | Tool | Description |
 |------|-------------|
-| ?ìã JSON Formatter | Format, validate & beautify JSON |
-| ?îë Base64 Converter | Encode/decode Base64 strings |
-| ?îç Regex Tester | Test and debug regex patterns |
-| ?îê Hash Generator | MD5, SHA-1, SHA-256 hash generation |
-| ?åê URL Encoder | Encode/decode URLs |
-| ?ìä CSV ??JSON | Convert between CSV and JSON formats |
-| ?é® Color Picker | HEX/RGB/HSL color converter |
-| ?ñºÔ∏?Image Resizer | Resize images in-browser |
-| ?ì¶ Image Compressor | Reduce image size without changing resolution |
-| ?î∑ Image ??HEX | Convert images to HEX values |
-| ?ñäÔ∏?HTML Preview | Live HTML/CSS/JS editor with preview |
-| ?ìê Unit Converter | Length, weight, temperature, and more |
-| ?±Ô∏è Cron Parser | Parse and describe cron expressions |
-| ?ìÑ PDF / OCR Extractor | Extract text from PDFs and images |
+| Tensor Shape Calculator | Add layers sequentially and calculate output shapes in real-time. Supports Conv2d, Pool, Linear, and more. |
+| Label Format Converter | Convert between YOLO, COCO JSON, Pascal VOC (XML). Drag & drop with batch conversion. |
+| GPU Memory Calculator | Estimate VRAM usage from model parameters and batch size. 100+ GPUs supported. |
+| Training Analyzer | Upload YOLO results.csv to visualize loss/mAP curves and detect overfitting/underfitting. |
+| LR Scheduler Visualizer | Compare and visualize learning rate schedules (cosine, warmup, step, OneCycle) interactively. |
+| Model Parameter Counter | Calculate total parameters, trainable vs non-trainable, and memory footprint. |
+| Augmentation Previewer | Preview augmentations (flip, blur, noise, crop, cutout) in a live grid. |
+| Detection Metrics | Calculate IoU between bounding boxes and simulate NMS with adjustable thresholds. |
+| Confusion Matrix | Visualize confusion matrix from predicted vs ground truth labels. |
 
-## ?§ñ AI / ML Tools
+### General Dev Tools
 
 | Tool | Description |
 |------|-------------|
-| ?ßÆ Tensor Shape Calculator | Compute tensor shapes through NN layers |
-| ?éÆ GPU Memory Calculator | Estimate VRAM usage for model training |
-| ?è∑Ô∏?Label Converter | Convert YOLO ??COCO ??Pascal VOC |
-| ?ìà Training Analyzer | Analyze training logs and detect issues |
-| ?ìâ LR Scheduler Visualizer | Visualize learning rate schedules |
-| ?î¢ Model Param Counter | Count model parameters by layer |
-| ?ñºÔ∏?Augmentation Previewer | Preview image augmentation effects |
-| ?ìê Detection Metrics | Calculate mAP, IoU, precision, recall |
+| JSON Formatter | Format, minify, and validate JSON. Syntax highlighting, sort keys, and stats. |
+| Base64 Converter | Encode and decode text or files to Base64. Supports image preview and file download. |
+| Color Picker | Convert HEX, RGB, HSL. Generate harmony colors, shades, and palettes. |
+| Image Resizer | Resize images in the browser. Set exact dimensions, maintain aspect ratio, export as JPG/PNG/WebP. |
+| Image Compressor | Reduce image file size without changing resolution. Quality slider for WebP/JPEG/PNG optimization. |
+| CSV to JSON | Convert between CSV and JSON formats with custom delimiters, table preview, and file download. |
+| Regex Tester | Build and test regular expressions with live match highlighting, replace mode, and preset patterns. |
+| Hash Generator | Generate MD5, SHA-1, SHA-256, SHA-384, SHA-512 hashes from text or any file. |
+| Unit Converter | Convert CSS units (px, rem, em, vw), length, storage, temperature, time, and angle. |
+| URL Encoder/Decoder | Encode, decode, and parse URLs with encodeURI, encodeURIComponent, and query string parsing. |
+| Cron Parser | Parse cron expressions into human-readable descriptions. Preview next scheduled run times. |
+| PDF Text Extractor | Extract text from PDF files instantly, page-by-page, all in your browser. |
+| Image to HEX | Convert image files to hex byte strings, or reconstruct images from hex data. |
+| HTML Preview | Type or paste HTML/CSS/JS and see it rendered live. |
 
----
+## Project Structure
 
-## ?? Getting Started
+`
+devpanda/
++-- index.html            # App entry point
++-- vite.config.js        # Vite config
++-- src/
+|   +-- main.js           # Router + app bootstrap
+|   +-- style.css         # Global styles
+|   +-- pages/            # One file per tool
+|   +-- components/       # Navbar, Sidebar, Footer
+|   +-- styles/           # Per-page CSS
+|   +-- utils/            # Shared utilities
++-- public/
+    +-- sitemap.xml
+`
 
-```bash
-# Clone the repo
-git clone https://github.com/ChoiJaeWoon/devpanda.git
-cd devpanda
+## Getting Started
 
+`ash
 # Install dependencies
 npm install
 
@@ -73,54 +74,17 @@ npm run dev
 
 # Build for production
 npm run build
-```
+`
 
----
+## Tech Stack
 
-## ?èóÔ∏?Tech Stack
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Rendering**: Vanilla JS (no framework)
+- **Charts**: [Chart.js](https://www.chartjs.org/)
+- **Background Removal**: [@imgly/background-removal](https://img.ly)
+- **Hosting**: Firebase
+- **Fonts**: [Google Fonts](https://fonts.google.com/) - Inter
 
-| Layer | Technology |
-|-------|-----------|
-| Build Tool | [Vite](https://vitejs.dev) |
-| Hosting | [Firebase Hosting](https://firebase.google.com) |
-| Styling | Vanilla CSS |
-| Fonts | [Google Fonts](https://fonts.google.com) ??Inter |
-| News Feed | [Hacker News API](https://github.com/HackerNews/API), [Dev.to API](https://developers.forem.com/api) |
-| Link Preview | [Microlink API](https://microlink.io) (free tier) |
-| Image Processing | Browser Canvas API |
+## License
 
----
-
-## ?ìÅ Project Structure
-
-```
-devpanda/
-?ú‚??Ä public/
-??  ?ú‚??Ä favicon.svg
-??  ?ú‚??Ä og-image.png
-??  ?ú‚??Ä robots.txt
-??  ?î‚??Ä sitemap.xml
-?ú‚??Ä src/
-??  ?ú‚??Ä components/     # Shared UI components (navbar, sidebar, footer)
-??  ?ú‚??Ä pages/          # Individual tool pages
-??  ?ú‚??Ä styles/pages/   # Per-page CSS
-??  ?ú‚??Ä utils/          # Router, helpers
-??  ?ú‚??Ä main.js         # App entry & route registration
-??  ?î‚??Ä style.css       # Global styles
-?ú‚??Ä index.html
-?î‚??Ä vite.config.js
-```
-
----
-
-## ?ì¨ Contact
-
-Bug reports & feedback: [devpanda@devpanda.cloud](mailto:devpanda@nullpoint.cloud)
-
----
-
-<div align="center">
-
-Made with ?§Ô∏è for developers ¬∑ [devpanda.cloud](https://devpanda.cloud)
-
-</div>
+MIT (c) [ChoiJaeWoon](https://github.com/ChoiJaeWoon)

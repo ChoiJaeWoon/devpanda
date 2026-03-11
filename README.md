@@ -389,6 +389,20 @@ See [SECURITY.md](SECURITY.md) for security policy and vulnerability reporting.
 
 <br/>
 
+## # Contact
+
+Bug reports, feature requests, and general questions are always welcome.
+
+> **devpanda@devpanda.cloud**
+
+Feel free to reach out anytime &mdash; we'd love to hear from you.
+
+<br/>
+
+---
+
+<br/>
+
 <p align="center">
   <strong>MIT License</strong> &copy; <a href="https://github.com/ChoiJaeWoon">ChoiJaeWoon</a>
 </p>
